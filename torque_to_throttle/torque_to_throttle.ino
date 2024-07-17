@@ -85,6 +85,13 @@ const int PULSE_MIN = 2;     // controle nb. de pulse mini avant demarage (turn-
 //const int TORK_START = 300; // aide au demarage, valeur tork a envoyer, doit etre > tork_min et <= tork_max
 
 
+// check PAS et Time to stop
+// ---------------
+const int CHECK_PAS = 500; // ms, time to stop, default 300ms, si l'assistance coupe trop vite à l'arrêt pedalage  mettre ~400-500ms 
+const int DELAY_OFF = 0;  // ms, attente avant reprise si arret pedalage (min 0, defaut 50, max selon envie mais attention est bloquant)
+
+
+
 // --- FILTRAGE SIGNAL TORK ------
 // -------------------------------
 
@@ -115,13 +122,6 @@ const float U_MAX = FV_TR_MAX;   // fin courbe throttle, en principe == FV_TR_MA
 // si offset:        B minimum = 2.5 obligatoire ! (voir tableur) 
 // si pas d'offset:  B minimum = 1.0  (1.0 == pas de courbure du tout) 
 const float COEFF_B = 2.5;    
-
-
-// Time to stop
-// ---------------
-const int CHECK_PAS = 500; // ms, time to stop, default 300ms, si l'assistance coupe trop vite à l'arrêt pedalage  mettre ~400-500ms 
-const int DELAY_OFF = 50;  // ms, defaut 50. attente avant reprise si arret pedalage (min 0, max selon envie mais attention est bloquant !)
-
 
 // -- Debug Serial : Afficher les infos console serial ? true/false 
 // remettre a false apres test, consomme des ressources et du temps si actif 
