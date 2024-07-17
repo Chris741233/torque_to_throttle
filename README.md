@@ -21,16 +21,18 @@ Discussion en français sur le [forum Cyclurba](https://cyclurba.fr/forum/751958
 </p>
 
 ### Torque diagram
+[Source, voir son pdf](https://www.mdpi.com/1424-8220/23/10/4657 " voir son pdf")  
 <p align="left">
-  <img src="./docs/tork_diagram.jpg" width="700" title="digispark led">
+  <img src="./docs/tork_diagram.jpg" width="700" title="digispark led">  
 </p>
 
-### Simulator 
+  
+### Mon générateur de signal ebike  
 <p align="left">
   <img src="./docs/banc_test1.jpg" width="700" title="digispark led">
 </p>
 
-### Simulator, PWM OUT
+### Simulateur, PWM OUT
 <p align="left">
   <img src="./docs/banc_test2.jpg" width="700" title="digispark led">
 </p>
