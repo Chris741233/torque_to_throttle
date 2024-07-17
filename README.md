@@ -1,6 +1,6 @@
 # e-bike torque to throttle, test
 
-Hacking e-bike speedometer   
+   
 
 
 
