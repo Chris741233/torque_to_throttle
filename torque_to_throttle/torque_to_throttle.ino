@@ -1,5 +1,5 @@
 /******************************************************************
-Created with PROGRAMINO IDE for Arduino - der modif 13.07.2024 | 12:00:00
+Created with PROGRAMINO IDE for Arduino - der modif 18.07.2024 | 12:00:00
 Project     :
 Libraries   :
 Author      : Chris74
@@ -78,17 +78,17 @@ const float FV_OFFSET_PAS = 0.10;  // +volt avec decimales, est ajoute a FV_TORK
 
 // Controle pedalage
 // ------------------
-const int START_NB_TURN = 1; // Aide au demarage : combien de tour pédalier ? Defaut 1 tour, en principe laisser comme ca (min 1 !!)
+const int START_NB_TURN = 1; // Aide au demarage : combien de tour pédalier ? Defaut 1 tour (min 1 !). En principe laisser sur 1.
 const int PULSE_MIN = 2;     // controle nb. de pulse mini avant demarage (turn-on) defaut 3 : attention doit etre > 1 (min 2) 
 
-// demarage optionel (pas utilise)
+// demarage optionel (non utilise)
 //const int TORK_START = 300; // aide au demarage, valeur tork a envoyer, doit etre > tork_min et <= tork_max
 
 
 // check PAS et Time to stop
 // ---------------
 const int CHECK_PAS = 500; // ms, time to stop, default 300ms, si l'assistance coupe trop vite à l'arrêt pedalage  mettre ~400-500ms 
-const int DELAY_OFF = 0;  // ms, attente avant reprise si arret pedalage (min 0, defaut 50, max selon envie mais attention est bloquant)
+const int DELAY_OFF = 50;  // ms, attente avant reprise si arret pedalage (min 0, defaut 50, max selon envie mais attention est bloquant)
 
 
 
@@ -103,25 +103,25 @@ const int DELAY_OFF = 0;  // ms, attente avant reprise si arret pedalage (min 0,
 
 // ATTENTION AUX CUMULS !
 
-const int KEEP_NB_TURN = 1;    // combien de tour pedalier a conserver avant mise a jour high_tork ? Defaut = 1 (min 1 !)
+const int KEEP_NB_TURN = 1;  // En principe laisser sur 1 - combien de tour pedalier a conserver avant mise a jour high_tork ? Defaut = 1 (min 1 !)
 
-const int  CUT_PIC_TORK = 0;   // % max augmentation tork par tour, sans decimales, expl: 25, 0=Off (desactive)
+const int  CUT_PIC_TORK = 0; // % max augmentation tork par tour, sans decimales, expl: 25, 0=Off (desactive)
 
-const int SAMPLE_MEDIAN = 0;   // combien d'echantillon a placer dans le buffer filtre median ? min=3, 0=Off (desactive)
-// 3 = 3 tours pedalier pour remplir le buffer circulaire si KEEP_NB_TURN = 1 
+const int SAMPLE_MEDIAN = 0; // combien d'echantillon a placer dans le buffer filtre median ? min=3, 0=Off (desactive)
+// expl: 3 = 3 tours pedalier pour remplir le buffer circulaire si KEEP_NB_TURN = 1 
 
 
-// -- Throttle spline (verifier sotie dans setup debug ou fichier tableur)
+// -- Throttle spline (verifier sotie dans setup debug ou fichier tableur "spline_throttle.xls")
 #define USE_TR_SPLINE 0 // utiliser spline ? 1 true / 0 false (0 = filtre Off)  
 #define SPLINE_OFFSET 1 // utiliser offset ? 1 true / 0 false (si offset alors depart courbe a U_MIN, else depart a 0)
 
 const float U_MIN = FV_TR_MIN;   // debut courbe throttle, en principe == FV_TR_MIN
 const float U_MAX = FV_TR_MAX;   // fin courbe throttle, en principe == FV_TR_MAX 
-
 // Max courbure spline, float, decimale obligatoire 
+const float COEFF_B = 2.5;    
 // si offset:        B minimum = 2.5 obligatoire ! (voir tableur) 
 // si pas d'offset:  B minimum = 1.0  (1.0 == pas de courbure du tout) 
-const float COEFF_B = 2.5;    
+
 
 // -- Debug Serial : Afficher les infos console serial ? true/false 
 // remettre a false apres test, consomme des ressources et du temps si actif 
