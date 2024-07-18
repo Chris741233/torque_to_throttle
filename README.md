@@ -27,20 +27,21 @@ marque AXLETORQUEBB68MM (Aliexpress)
   <img src="./docs/tork_diagram.jpg" width="700" title="digispark led">  
 </p>
 
-  
-### Mon générateur de signal ebike  
+### Banc test (M5Stack + Arduino Nano)  
+<p align="left">
+  <img src="./docs/simulator1.jpg" width="700" title="digispark led">
+</p>
+
+### Génération des signaux PAS et Torque
 <p align="left">
   <img src="./docs/banc_test1.jpg" width="700" title="digispark led">
 </p>
 
-### signal PWM OUT (vers throttle contoleur)
+### signal PWM OUT (vers throttle controleur)  
 filtre RC comme sur schéma, vérification sur oscillo + voltmètre de labo.
 La tension DC est stable et cohérente selon réglage Vref.  
 <p align="left">
   <img src="./docs/banc_test2.jpg" width="700" title="digispark led">
 </p>
 
-### Montage banc test
-<p align="left">
-  <img src="./docs/simulator1.jpg" width="700" title="digispark led">
-</p>
+
