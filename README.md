@@ -27,7 +27,7 @@ marque AXLETORQUEBB68MM (Aliexpress)
   <img src="./docs/tork_diagram.jpg" width="700" title="digispark led">  
 </p>
 
-### Banc test (M5Stack + Arduino Nano)  
+### Banc de simulation  (M5Stack + Arduino Nano)  
 <p align="left">
   <img src="./docs/simulator1.jpg" width="700" title="digispark led">
 </p>
