@@ -4,7 +4,6 @@
 Discussion en français sur le [forum Cyclurba](https://cyclurba.fr/forum/751958/arduino-l-assistance-d-un-vae.html?from=221&discussionID=31032&messageID=751958)  
 
 
-
 ### Torque sensor   
 marque AXLETORQUEBB68MM (Aliexpress)
 5V 50mA MAX, 35mA standard, sortie 0.8-3.7v, 44mV/Nm, 75 Nm max  
@@ -34,7 +33,8 @@ marque AXLETORQUEBB68MM (Aliexpress)
   <img src="./docs/banc_test1.jpg" width="700" title="digispark led">
 </p>
 
-### Simulateur, PWM OUT
+### signal PWM OUT
+filtre RC comme sur schéma, vérification sur oscillo + voltmètre de labo  
 <p align="left">
   <img src="./docs/banc_test2.jpg" width="700" title="digispark led">
 </p>
