@@ -34,7 +34,8 @@ marque AXLETORQUEBB68MM (Aliexpress)
 </p>
 
 ### signal PWM OUT
-filtre RC comme sur schéma, vérification sur oscillo + voltmètre de labo  
+filtre RC comme sur schéma, vérification sur oscillo + voltmètre de labo.
+La tension DC est stable et cohérente.  
 <p align="left">
   <img src="./docs/banc_test2.jpg" width="700" title="digispark led">
 </p>
