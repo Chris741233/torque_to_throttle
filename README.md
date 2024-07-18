@@ -33,9 +33,14 @@ marque AXLETORQUEBB68MM (Aliexpress)
   <img src="./docs/banc_test1.jpg" width="700" title="digispark led">
 </p>
 
-### signal PWM OUT
+### signal PWM OUT (vers throttle contoleur)
 filtre RC comme sur schéma, vérification sur oscillo + voltmètre de labo.
-La tension DC est stable et cohérente.  
+La tension DC est stable et cohérente selon réglage Vref.  
 <p align="left">
   <img src="./docs/banc_test2.jpg" width="700" title="digispark led">
+</p>
+
+### Montage banc test
+<p align="left">
+  <img src="./docs/simulator1.jpg" width="700" title="digispark led">
 </p>
